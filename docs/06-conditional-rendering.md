@@ -1,4 +1,4 @@
-# Методичка 6. Условный рендеринг
+# 6. Условный рендеринг
 
 ## Цель занятия
 
@@ -593,11 +593,3 @@ null    -> ничего не показывать
 В React условия пишутся обычным JavaScript.
 ```
 
-Следующая логичная тема - формы и управляемые поля ввода. Мы разберем `input`, `value`, `onChange` и хранение введенного текста в состоянии.
-
-## Источники
-
-- React Docs: Conditional Rendering - https://react.dev/learn/conditional-rendering
-- React Docs: JavaScript in JSX with Curly Braces - https://react.dev/learn/javascript-in-jsx-with-curly-braces
-- React Docs: State: A Component's Memory - https://react.dev/learn/state-a-components-memory
-- Старый русский tutorial React, как дополнительный ориентир по учебной последовательности. Важно: эта страница больше не обновляется, актуальная документация находится на react.dev - https://ru.legacy.reactjs.org/tutorial/tutorial.html
