@@ -1,16 +1,87 @@
-# React + Vite
+# Учебные состояния проекта
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект ведется как серия методичек. Для каждой ключевой темы можно сделать отдельный Git-коммит и тег, чтобы быстро перейти к нужному состоянию кода.
 
-Currently, two official plugins are available:
+## Как перейти к этапу
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git checkout lesson-01-architecture
+```
 
-## React Compiler
+или:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git checkout lesson-02-jsx-components
+```
 
-## Expanding the ESLint configuration
+или:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git checkout lesson-03-events-usestate
+```
+
+или:
+
+```bash
+git checkout lesson-04-props
+```
+
+или:
+
+```bash
+git checkout lesson-05-rendering-lists
+```
+
+или:
+
+```bash
+git checkout lesson-06-conditional-rendering
+```
+
+или:
+
+```bash
+git checkout lesson-07-forms-rhf-tailwind
+```
+
+или:
+
+```bash
+git checkout lesson-08-project-decomposition
+```
+
+или:
+
+```bash
+git checkout lesson-09-routing-pages-layouts
+```
+
+Чтобы вернуться к основной ветке:
+
+```bash
+git checkout main
+```
+
+## Этапы
+
+| Тег | Методичка | Что показывает код |
+|---|---|---|
+| `lesson-01-architecture` | `docs/01-react-vite-architecture.md` | Исходная архитектура React Vite проекта: `index.html`, `main.jsx`, `App.jsx`, стили и assets. |
+| `lesson-02-jsx-components` | `docs/02-jsx-and-react-components.md` | Разбиение JSX в `App.jsx` на компоненты `Hero`, `PageTitle` и `CounterButton`. |
+| `lesson-03-events-usestate` | `docs/03-events-and-usestate.md` | События и состояние: именованные обработчики, `useState`, `Reset` и переключаемая подсказка. |
+| `lesson-04-props` | `docs/04-passing-props.md` | Props: `PageTitle`, `CounterButton` и `ActionButton` получают данные и функции от родителя. |
+| `lesson-05-rendering-lists` | `docs/05-rendering-lists.md` | Списки: ссылки вынесены в массивы данных и отображаются через `.map()` с устойчивыми `key`. |
+| `lesson-06-conditional-rendering` | `docs/06-conditional-rendering.md` | Условный рендеринг: `if`, `return null`, тернарный оператор и условный текст интерфейса. |
+| `lesson-07-forms-rhf-tailwind` | `docs/07-forms-react-hook-form-tailwind.md` | Формы: React Hook Form, `register`, `handleSubmit`, `useWatch`, валидация и Tailwind CSS. |
+| `lesson-08-project-decomposition` | `docs/08-project-decomposition.md` | Декомпозиция: компоненты вынесены в `src/components`, данные - в `src/data`, `App.jsx` собирает страницу. |
+| `lesson-09-routing-pages-layouts` | `docs/09-routing-pages-layouts.md` | Роутинг: `RouterProvider`, `createBrowserRouter`, страницы, layout, `Outlet`, `NavLink` и 404. |
+
+## Рекомендация
+
+Для просмотра старого состояния без риска что-то испортить можно создать временную ветку:
+
+```bash
+git checkout -b practice-lesson-02 lesson-02-jsx-components
+```
+
+Так студент сможет экспериментировать с кодом, а основная ветка останется чистой.
