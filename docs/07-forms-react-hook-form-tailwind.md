@@ -1,4 +1,4 @@
-# Методичка 7. Формы: React Hook Form и Tailwind CSS
+# 7. Формы: React Hook Form и Tailwind CSS
 
 ## Цель занятия
 
@@ -602,12 +602,3 @@ reset -> очищает форму
 useWatch -> следит за значением поля
 ```
 
-Следующая логичная тема - декомпозиция проекта: вынесем компоненты и данные из `App.jsx` в отдельные файлы, чтобы проект стал похож на настоящую структуру React-приложения.
-
-## Источники
-
-- React Hook Form: Get Started - https://react-hook-form.com/get-started
-- React Hook Form: useForm - https://react-hook-form.com/docs/useform
-- React Hook Form: useWatch - https://react-hook-form.com/docs/usewatch
-- Tailwind CSS: Installation Using Vite - https://tailwindcss.com/docs/installation/using-vite
-- Tailwind CSS: Styling with Utility Classes - https://tailwindcss.com/docs/styling-with-utility-classes
