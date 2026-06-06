@@ -1,4 +1,4 @@
-# Методичка 4. Props: передача данных между компонентами
+# 4. Props: передача данных между компонентами
 
 ## Цель занятия
 
@@ -721,11 +721,3 @@ Props нельзя изменять внутри дочернего компон
 Функции тоже можно передавать через props.
 ```
 
-Следующая логичная тема - списки и рендеринг массивов. Мы разберем, как не писать одинаковые элементы вручную, а создавать их через массивы и `.map()`.
-
-## Источники
-
-- React Docs: Passing Props to a Component - https://react.dev/learn/passing-props-to-a-component
-- React Docs: Your First Component - https://react.dev/learn/your-first-component
-- React Docs: State: A Component's Memory - https://react.dev/learn/state-a-components-memory
-- Старый русский tutorial React, как дополнительный ориентир по учебной последовательности. Важно: эта страница больше не обновляется, актуальная документация находится на react.dev - https://ru.legacy.reactjs.org/tutorial/tutorial.html
