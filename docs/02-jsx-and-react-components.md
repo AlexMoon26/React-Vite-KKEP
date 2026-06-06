@@ -1,4 +1,4 @@
-# Методичка 2. JSX и компоненты React
+# 2. JSX и компоненты React
 
 ## Цель занятия
 
@@ -1067,13 +1067,3 @@ JSX позволяет писать HTML-похожую разметку вну�
 JavaScript-значения вставляются через {}.
 Несколько элементов нужно оборачивать в общий корень или фрагмент.
 ```
-
-Следующая логичная тема - события и состояние. Мы подробно разберем кнопку счетчика, `onClick`, `useState`, `count` и `setCount`.
-
-## Источники
-
-- React Docs: Your First Component - https://react.dev/learn/your-first-component
-- React Docs: Writing Markup with JSX - https://react.dev/learn/writing-markup-with-jsx
-- React Docs: JavaScript in JSX with Curly Braces - https://react.dev/learn/javascript-in-jsx-with-curly-braces
-- React Docs: Passing Props to a Component - https://react.dev/learn/passing-props-to-a-component
-- Старый русский tutorial React, как дополнительный ориентир по учебной последовательности. Важно: эта страница больше не обновляется, актуальная документация находится на react.dev - https://ru.legacy.reactjs.org/tutorial/tutorial.html
