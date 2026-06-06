@@ -50,6 +50,12 @@ git checkout lesson-07-forms-rhf-tailwind
 git checkout lesson-08-project-decomposition
 ```
 
+или:
+
+```bash
+git checkout lesson-09-routing-pages-layouts
+```
+
 Чтобы вернуться к основной ветке:
 
 ```bash
@@ -68,6 +74,7 @@ git checkout main
 | `lesson-06-conditional-rendering` | `docs/06-conditional-rendering.md` | Условный рендеринг: `if`, `return null`, тернарный оператор и условный текст интерфейса. |
 | `lesson-07-forms-rhf-tailwind` | `docs/07-forms-react-hook-form-tailwind.md` | Формы: React Hook Form, `register`, `handleSubmit`, `useWatch`, валидация и Tailwind CSS. |
 | `lesson-08-project-decomposition` | `docs/08-project-decomposition.md` | Декомпозиция: компоненты вынесены в `src/components`, данные - в `src/data`, `App.jsx` собирает страницу. |
+| `lesson-09-routing-pages-layouts` | `docs/09-routing-pages-layouts.md` | Роутинг: `RouterProvider`, `createBrowserRouter`, страницы, layout, `Outlet`, `NavLink` и 404. |
 
 ## Рекомендация
 
