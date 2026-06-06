@@ -1,4 +1,4 @@
-# Методичка 8. Декомпозиция проекта: компоненты и данные в отдельных файлах
+# 8. Декомпозиция проекта: компоненты и данные в отдельных файлах
 
 ## Цель занятия
 
@@ -544,10 +544,3 @@ data       -> данные для интерфейса
 App.jsx    -> собирает страницу
 ```
 
-Следующая логичная тема - финальная учебная сборка и публикация проекта: `npm run build`, папка `dist`, GitHub и подготовка проекта к размещению.
-
-## Источники
-
-- React Docs: Importing and Exporting Components - https://react.dev/learn/importing-and-exporting-components
-- React Docs: Your First Component - https://react.dev/learn/your-first-component
-- React Docs: Describing the UI - https://react.dev/learn/describing-the-ui
