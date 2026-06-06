@@ -107,6 +107,38 @@ function ResourceLink({
   );
 }
 
+function CounterStatus({ count }) {
+  if (count === 0) {
+    return <p className="counter-status">Кнопку еще не нажимали.</p>;
+  }
+
+  if (count < 5) {
+    return (
+      <p className="counter-status">
+        Кнопку нажали {count} раз. Продолжайте.
+      </p>
+    );
+  }
+
+  return (
+    <p className="counter-status success">
+      Отлично, счетчик дошел до {count}.
+    </p>
+  );
+}
+
+function StateHint({ isVisible }) {
+  if (!isVisible) {
+    return null;
+  }
+
+  return (
+    <p className="state-hint">
+      useState хранит данные, которые влияют на интерфейс.
+    </p>
+  );
+}
+
 function App() {
   const [count, setCount] = useState(0);
   const [isHintVisible, setIsHintVisible] = useState(false);
@@ -134,15 +166,15 @@ function App() {
         />
         <div className="counter-panel">
           <CounterButton count={count} onClick={handleCounterClick} />
+          <CounterStatus count={count} />
           <div className="counter-actions">
             <ActionButton label="Reset" onClick={handleResetClick} />
-            <ActionButton label="Toggle hint" onClick={handleHintClick} />
+            <ActionButton
+              label={isHintVisible ? "Hide hint" : "Show hint"}
+              onClick={handleHintClick}
+            />
           </div>
-          {isHintVisible && (
-            <p className="state-hint">
-              useState хранит данные, которые влияют на интерфейс.
-            </p>
-          )}
+          <StateHint isVisible={isHintVisible} />
         </div>
       </section>
 

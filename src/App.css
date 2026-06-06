@@ -31,6 +31,16 @@
   justify-content: center;
 }
 
+.counter-status {
+  margin: -4px 0 0;
+  color: var(--text);
+}
+
+.counter-status.success {
+  color: var(--accent);
+  font-weight: 500;
+}
+
 .secondary-button {
   font-size: 14px;
   padding: 5px 10px;

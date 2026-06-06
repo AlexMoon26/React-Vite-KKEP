@@ -32,6 +32,12 @@ git checkout lesson-04-props
 git checkout lesson-05-rendering-lists
 ```
 
+или:
+
+```bash
+git checkout lesson-06-conditional-rendering
+```
+
 Чтобы вернуться к основной ветке:
 
 ```bash
@@ -47,6 +53,7 @@ git checkout main
 | `lesson-03-events-usestate` | `docs/03-events-and-usestate.md` | События и состояние: именованные обработчики, `useState`, `Reset` и переключаемая подсказка. |
 | `lesson-04-props` | `docs/04-passing-props.md` | Props: `PageTitle`, `CounterButton` и `ActionButton` получают данные и функции от родителя. |
 | `lesson-05-rendering-lists` | `docs/05-rendering-lists.md` | Списки: ссылки вынесены в массивы данных и отображаются через `.map()` с устойчивыми `key`. |
+| `lesson-06-conditional-rendering` | `docs/06-conditional-rendering.md` | Условный рендеринг: `if`, `return null`, тернарный оператор и условный текст интерфейса. |
 
 ## Рекомендация
 
