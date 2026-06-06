@@ -14,12 +14,12 @@ function Hero() {
   );
 }
 
-function PageTitle() {
+function PageTitle({ title, fileName, toolName }) {
   return (
     <div>
-      <h1>Get started</h1>
+      <h1>{title}</h1>
       <p>
-        Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+        Edit <code>{fileName}</code> and save to test <code>{toolName}</code>
       </p>
     </div>
   );
@@ -29,6 +29,14 @@ function CounterButton({ count, onClick }) {
   return (
     <button type="button" className="counter" onClick={onClick}>
       Count is {count}
+    </button>
+  );
+}
+
+function ActionButton({ label, onClick }) {
+  return (
+    <button type="button" className="secondary-button" onClick={onClick}>
+      {label}
     </button>
   );
 }
@@ -53,24 +61,16 @@ function App() {
     <>
       <section id="center">
         <Hero />
-        <PageTitle />
+        <PageTitle
+          title="Get started"
+          fileName="src/App.jsx"
+          toolName="HMR"
+        />
         <div className="counter-panel">
           <CounterButton count={count} onClick={handleCounterClick} />
           <div className="counter-actions">
-            <button
-              type="button"
-              className="secondary-button"
-              onClick={handleResetClick}
-            >
-              Reset
-            </button>
-            <button
-              type="button"
-              className="secondary-button"
-              onClick={handleHintClick}
-            >
-              Toggle hint
-            </button>
+            <ActionButton label="Reset" onClick={handleResetClick} />
+            <ActionButton label="Toggle hint" onClick={handleHintClick} />
           </div>
           {isHintVisible && (
             <p className="state-hint">
