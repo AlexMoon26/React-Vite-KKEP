@@ -1,4 +1,4 @@
-# Методичка 3. События и состояние: `useState`
+# 3. События и состояние: `useState`
 
 ## Цель занятия
 
@@ -985,12 +985,3 @@ React заново отображает компонент
 const [count, setCount] = useState(0)
 ```
 
-Следующая логичная тема - props. Мы разберем, как родительский компонент передает данные дочернему компоненту и как сделать компоненты более гибкими.
-
-## Источники
-
-- React Docs: Responding to Events - https://react.dev/learn/responding-to-events
-- React Docs: State: A Component's Memory - https://react.dev/learn/state-a-components-memory
-- React API Reference: useState - https://react.dev/reference/react/useState
-- React Docs: State as a Snapshot - https://react.dev/learn/state-as-a-snapshot
-- Старый русский tutorial React, как дополнительный ориентир по учебной последовательности. Важно: эта страница больше не обновляется, актуальная документация находится на react.dev - https://ru.legacy.reactjs.org/tutorial/tutorial.html
