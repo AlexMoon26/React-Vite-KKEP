@@ -35,16 +35,49 @@ function CounterButton({ count, onClick }) {
 
 function App() {
   const [count, setCount] = useState(0);
+  const [isHintVisible, setIsHintVisible] = useState(false);
+
+  function handleCounterClick() {
+    setCount((count) => count + 1);
+  }
+
+  function handleResetClick() {
+    setCount(0);
+  }
+
+  function handleHintClick() {
+    setIsHintVisible((isHintVisible) => !isHintVisible);
+  }
 
   return (
     <>
       <section id="center">
         <Hero />
         <PageTitle />
-        <CounterButton
-          count={count}
-          onClick={() => setCount((count) => count + 1)}
-        />
+        <div className="counter-panel">
+          <CounterButton count={count} onClick={handleCounterClick} />
+          <div className="counter-actions">
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={handleResetClick}
+            >
+              Reset
+            </button>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={handleHintClick}
+            >
+              Toggle hint
+            </button>
+          </div>
+          {isHintVisible && (
+            <p className="state-hint">
+              useState хранит данные, которые влияют на интерфейс.
+            </p>
+          )}
+        </div>
       </section>
 
       <div className="ticks"></div>
