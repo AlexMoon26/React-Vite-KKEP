@@ -26,6 +26,12 @@ git checkout lesson-03-events-usestate
 git checkout lesson-04-props
 ```
 
+или:
+
+```bash
+git checkout lesson-05-rendering-lists
+```
+
 Чтобы вернуться к основной ветке:
 
 ```bash
@@ -40,6 +46,7 @@ git checkout main
 | `lesson-02-jsx-components` | `docs/02-jsx-and-react-components.md` | Разбиение JSX в `App.jsx` на компоненты `Hero`, `PageTitle` и `CounterButton`. |
 | `lesson-03-events-usestate` | `docs/03-events-and-usestate.md` | События и состояние: именованные обработчики, `useState`, `Reset` и переключаемая подсказка. |
 | `lesson-04-props` | `docs/04-passing-props.md` | Props: `PageTitle`, `CounterButton` и `ActionButton` получают данные и функции от родителя. |
+| `lesson-05-rendering-lists` | `docs/05-rendering-lists.md` | Списки: ссылки вынесены в массивы данных и отображаются через `.map()` с устойчивыми `key`. |
 
 ## Рекомендация
 

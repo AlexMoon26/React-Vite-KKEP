@@ -4,6 +4,49 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
+const documentationLinks = [
+  {
+    id: "vite",
+    label: "Explore Vite",
+    href: "https://vite.dev/",
+    icon: viteLogo,
+    iconClassName: "logo",
+  },
+  {
+    id: "react",
+    label: "Learn more",
+    href: "https://react.dev/",
+    icon: reactLogo,
+  },
+];
+
+const socialLinks = [
+  {
+    id: "github",
+    label: "GitHub",
+    href: "https://github.com/vitejs/vite",
+    iconHref: "/icons.svg#github-icon",
+  },
+  {
+    id: "discord",
+    label: "Discord",
+    href: "https://chat.vite.dev/",
+    iconHref: "/icons.svg#discord-icon",
+  },
+  {
+    id: "x",
+    label: "X.com",
+    href: "https://x.com/vite_js",
+    iconHref: "/icons.svg#x-icon",
+  },
+  {
+    id: "bluesky",
+    label: "Bluesky",
+    href: "https://bsky.app/profile/vite.dev",
+    iconHref: "/icons.svg#bluesky-icon",
+  },
+];
+
 function Hero() {
   return (
     <div className="hero">
@@ -38,6 +81,29 @@ function ActionButton({ label, onClick }) {
     <button type="button" className="secondary-button" onClick={onClick}>
       {label}
     </button>
+  );
+}
+
+function ResourceLink({
+  href,
+  label,
+  icon,
+  iconHref,
+  iconClassName = "button-icon",
+}) {
+  return (
+    <li>
+      <a href={href} target="_blank">
+        {icon ? (
+          <img className={iconClassName} src={icon} alt="" />
+        ) : (
+          <svg className={iconClassName} role="presentation" aria-hidden="true">
+            <use href={iconHref}></use>
+          </svg>
+        )}
+        {label}
+      </a>
+    </li>
   );
 }
 
@@ -90,18 +156,9 @@ function App() {
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
           <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+            {documentationLinks.map((link) => (
+              <ResourceLink key={link.id} {...link} />
+            ))}
           </ul>
         </div>
         <div id="social">
@@ -111,54 +168,9 @@ function App() {
           <h2>Connect with us</h2>
           <p>Join the Vite community</p>
           <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
+            {socialLinks.map((link) => (
+              <ResourceLink key={link.id} {...link} />
+            ))}
           </ul>
         </div>
       </section>
