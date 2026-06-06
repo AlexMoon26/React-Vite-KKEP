@@ -1,4 +1,4 @@
-# Методичка 9. Роутинг: страницы, layouts и React Router
+# 9. Роутинг: страницы, layouts и React Router
 
 ## Цель занятия
 
@@ -525,11 +525,4 @@ App.jsx
                   -> текущая page
 ```
 
-Следующая логичная тема - финальная сборка и публикация проекта: `npm run build`, папка `dist`, GitHub и деплой.
 
-## Источники
-
-- React Router: RouterProvider - https://reactrouter.com/7.16.0/api/data-routers/RouterProvider
-- React Router: Outlet - https://reactrouter.com/api/components/Outlet/
-- React Router: Routing - https://reactrouter.com/start/declarative/routing
-- React Docs: Importing and Exporting Components - https://react.dev/learn/importing-and-exporting-components
