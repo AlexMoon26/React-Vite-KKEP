@@ -1,4 +1,4 @@
-# Методичка 5. Списки и рендеринг массивов: `.map()` и `key`
+# 5. Списки и рендеринг массивов: `.map()` и `key`
 
 ## Цель занятия
 
@@ -709,12 +709,3 @@ JSX внутри .map() должен иметь key.
 key должен быть стабильным и уникальным среди соседей.
 Не используем Math.random() для key.
 ```
-
-Следующая логичная тема - условный рендеринг. Мы разберем, как показывать разные элементы интерфейса в зависимости от состояния, данных или условий.
-
-## Источники
-
-- React Docs: Rendering Lists - https://react.dev/learn/rendering-lists
-- React Docs: JavaScript in JSX with Curly Braces - https://react.dev/learn/javascript-in-jsx-with-curly-braces
-- React Docs: Passing Props to a Component - https://react.dev/learn/passing-props-to-a-component
-- Старый русский tutorial React, как дополнительный ориентир по учебной последовательности. Важно: эта страница больше не обновляется, актуальная документация находится на react.dev - https://ru.legacy.reactjs.org/tutorial/tutorial.html
