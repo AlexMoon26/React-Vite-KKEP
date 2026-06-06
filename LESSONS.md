@@ -38,6 +38,12 @@ git checkout lesson-05-rendering-lists
 git checkout lesson-06-conditional-rendering
 ```
 
+или:
+
+```bash
+git checkout lesson-07-forms-rhf-tailwind
+```
+
 Чтобы вернуться к основной ветке:
 
 ```bash
@@ -54,6 +60,7 @@ git checkout main
 | `lesson-04-props` | `docs/04-passing-props.md` | Props: `PageTitle`, `CounterButton` и `ActionButton` получают данные и функции от родителя. |
 | `lesson-05-rendering-lists` | `docs/05-rendering-lists.md` | Списки: ссылки вынесены в массивы данных и отображаются через `.map()` с устойчивыми `key`. |
 | `lesson-06-conditional-rendering` | `docs/06-conditional-rendering.md` | Условный рендеринг: `if`, `return null`, тернарный оператор и условный текст интерфейса. |
+| `lesson-07-forms-rhf-tailwind` | `docs/07-forms-react-hook-form-tailwind.md` | Формы: React Hook Form, `register`, `handleSubmit`, `useWatch`, валидация и Tailwind CSS. |
 
 ## Рекомендация
 
